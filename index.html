@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original Organics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Original Organics</h1>
+        <p>Fresh. Local. Organic.</p>
+    </header>
+    <nav>
+        <a href="#home" onclick="showPage('home')">Home</a>
+        <a href="#produce" onclick="showPage('produce')">Our Produce</a>
+        <a href="https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/organic-food/art-20043880" target="_blank">Learn about Organic</a>
+    </nav>
+    <div class="content" id="home">
+        <h2>Welcome to Original Organics</h2>
+        <p>We provide the freshest organic produce straight from local farms to your table. Sustainability and quality are at the heart of everything we do.</p>
+    </div>
+    <div class="content" id="produce" style="display:none">
+        <h2>Our Organic Produce</h2>
+        <div class="produce-grid">
+            <div class="produce-item">
+                <h3>Carrots</h3>
+                <img src="images/carrots.jpg" alt="Carrots" loading="lazy">
+                <p>Crisp and sweet, perfect for snacking or cooking.</p>
+            </div>
+            <div class="produce-item">
+                <h3>Kale</h3>
+                <img src="images/Kale.jpg" alt="Kale" loading="lazy">
+                <p>Leafy and nutrient-rich, great for salads and smoothies.</p>
+            </div>
+            <div class="produce-item">
+                <h3>Tomatoes</h3>
+                <img src="images/Tomatoes.jpg" alt="Tomatoes" loading="lazy">
+                <p>Juicy and flavorful, straight from the vine.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('produce').style.display = 'none';
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
